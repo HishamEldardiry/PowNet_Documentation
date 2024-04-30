@@ -6,7 +6,7 @@
 
 .. figure:: PowNet_Folder_Structure.png
    :align: center
-   :width: 600
+   :width: 800
 
 
 The user can make changes for the following options in ``main.py`` :
