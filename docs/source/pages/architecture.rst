@@ -2,12 +2,6 @@
 **3. Software Architecture**
 ============================
 
-
-.. code:: console
-
-    $ pip install sphinx_rtd_theme
-
-
 *The folder/files structure of PowNet is summarized as follows:*
 
 .. figure:: PowNet_Folder_Structure.png
@@ -15,7 +9,6 @@
    :width: 600
 
 
-Install the ``main.py`` package (or add it to your ``requirements.txt`` file):
 The user can make changes for the following options in ``main.py`` :
 
 1) Choosing model region of interest (ROI):
