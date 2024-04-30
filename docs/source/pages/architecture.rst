@@ -21,7 +21,7 @@ The user can make changes for the following options in ``main.py`` :
 
 .. code:: python
 
-use_gurobi ='True'
+   use_gurobi='True'
 
 “True”: Use Gurobi
 
@@ -31,13 +31,13 @@ use_gurobi ='True'
 
 .. code:: python
 
-T =
+   T=
 
 Choose the simulation horizon and calculate the number of steps per year=8760/T
 
 .. code:: python
 
-STEPS=##
+   STEPS=
 
 Choose the number of STEPS as the number of days to run simulations
 
@@ -45,21 +45,21 @@ From “main.py”:
 
 .. code:: python
 
-record = simulator.run(steps=STEPS)
+   record= simulator.run(steps=STEPS)
 
 From “simulation.py”:
 
 .. code:: python
 
-steps_to_run = min(steps, 365 \* 24 //self.T)
+   steps_to_run = min(steps, 365 \* 24 //self.T)
 
 4) Choosing to save results and plots or not:
 
 .. code:: python
 
-Save_RESULT = 'True'
+   Save_RESULT = 'True'
 
-Save_PLOT = 'True'
+   Save_PLOT = 'True'
 
 “True”: Saving results in “outputs” folder
 
