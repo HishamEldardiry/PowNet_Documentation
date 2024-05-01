@@ -8,8 +8,8 @@ project = 'PowNet'
 copyright = '2024, Critical Infrastructure Systems (CIS) Lab, Cornell University'
 author = 'Critical Infrastructure Systems Lab (CIS), Cornell University'
 
-# -- release = '2.0'
-# -- version = '2.0.0'
+release = '2.0'
+version = '2.0.0'
 
 # -- General configuration
 
