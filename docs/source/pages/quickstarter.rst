@@ -14,7 +14,7 @@
 
   >>> jupyter lab
 
-**3. Download PowNet from CSI Lab GitHub Repo**
+**3. Download PowNet from CIS Lab GitHub Repo**
 
 .. code:: shell
   
