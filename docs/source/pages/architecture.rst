@@ -48,6 +48,8 @@ The user can make changes for the following options in ``main.py`` :
 --------------
 PowNet Scripts
 --------------
+.. list-table:: Brief Description of PowNet Scripts 
+   :class: tight-table   
 
 +--------------------------+-------------------------------------------------------------+
 | Script                   | Description                                                 |
