@@ -13,6 +13,8 @@ version = '2.0.0'
 
 # -- General configuration
 
+github_username = 'HishamEldardiry'
+
 extensions = [
     'sphinx.ext.duration',
     'sphinx.ext.doctest',
