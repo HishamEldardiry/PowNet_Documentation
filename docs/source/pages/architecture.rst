@@ -49,14 +49,13 @@ The user can make changes for the following options in ``main.py`` :
 PowNet Scripts
 --------------
 
-.. list-table:: PowNet Scripts 
+.. list-table::test 
    :class: tight-table  
 +--------------------------+-------------------------------------------------------------+
 | Script                   | Description                                                 |
 +==========================+=============================================================+
 | input_processor.py       | Prepare the power system paramaters (saved under            |
 |                          | “model_library” folder) for the region of interest.         |
-|                          |                                                             |
 |                          | It uses the following files to calculate parameters:        |
 |                          |                                                             |
 |                          | 1) ``transmission.csv``                                     |
