@@ -52,7 +52,7 @@ PowNet Scripts Directory [Guide]
 +--------------+-------------------------------------------------------+
 | Script       | Description                                           |
 +==============+=======================================================+
-| input_       | Prepare the power system paramaters (saved under      |
+| input_\       | Prepare the power system paramaters (saved under      |
 | processor.py | “model_library” folder) for the region of interest.   |
 |              |                                                       |
 |              | It uses the following files to calculate parameters:  |
