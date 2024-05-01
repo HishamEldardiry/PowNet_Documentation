@@ -1,3 +1,7 @@
+import sys
+import os
+import re
+
 # -- Project information
 
 project = 'PowNet'
