@@ -6,6 +6,14 @@
 PowNet Folder Structure
 -----------------------
 
+.. confval:: collapse_navigation
+
+    With this enabled, navigation entries are not expandable -- the ``[+]``
+    icons next to each entry are removed.
+
+    :type: boolean
+    :default: ``True``
+
 The folder/files structure of PowNet is summarized as follows:
 
 .. figure:: PowNet_Folder_Structure.png
