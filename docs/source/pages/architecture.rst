@@ -15,7 +15,12 @@ The folder/files structure of PowNet is summarized as follows:
 
 The user can make changes for the following options in ``main.py`` :
 
-1) Choosing region of interest and year of simulation:
+.. confval:: MODEL_NAME
+
+    define region of interest and year of simulation.
+
+    :type: string
+    :default: ``cambodia_2016``
 
 .. code:: python
 
