@@ -4,4 +4,5 @@ white-space: normal !important;
 
 .bullet-list {
     margin-bottom: 100px; /* Adjust the value as needed */
+    margin-top: 100px; /* Adjust the value as needed */
 }
