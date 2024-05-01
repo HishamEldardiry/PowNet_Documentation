@@ -14,6 +14,9 @@ Frequently Asked Questions [FAQs]
 
     >>> conda install gurobi
 
+.. note::
+
+   This FAQ page is updated regularly with some tips on troublshooting the questions and issues encountered PowNet users.    
 
 Contact Information
 -------------------
