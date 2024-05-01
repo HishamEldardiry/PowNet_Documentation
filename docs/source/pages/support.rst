@@ -14,11 +14,11 @@ Answer
 
 Try the installation of gurobi through anaconda as follows:
 
-..code: shell
+.. code:: shell
 
-  conda config --add channels https://conda.anaconda.org/gurobi
+  >>> conda config --add channels https://conda.anaconda.org/gurobi
 
-  conda install gurobi
+  >>> conda install gurobi
 
 
 Contact Information
