@@ -47,7 +47,7 @@ Optimization Algorithm]*
 
   >>> import sys
   
-  >>> sys.path.append('/Path/to/PowNet Directory/src/ ')
+  >>> sys.path.append('/Path/to/PowNet Directory/src/')
 
 **7. Run PowNet Simulation**
 
