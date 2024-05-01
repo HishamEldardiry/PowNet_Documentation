@@ -36,14 +36,8 @@
 
   >>> %load main.py
 
-*Make changes in* main.py *loaded in the notebaook [e.g.,* ``MODEL_NAME`` *to define region of interest,* ``T`` *for Simulation Horizon,
+*Make changes in* ``main.py`` *loaded in the notebaook [e.g.,* ``MODEL_NAME`` *to define region of interest,* ``T`` *for Simulation Horizon,
 or* ``use_gurobi`` *to choose optimization solver] and then save changes.*
-
-.. role:: hl(code)
-   :class: highlight
-
-*Make changes in the* :hl:`main.py` *loaded [e.g.,* :hl:``MODEL_NAME`` *to define region of interest,* :hl:``T`` *for Simulation Horizon, or* :hl:``use_gurobi`` *to choose optimization solver]* *and then save changes.*
-
 
 .. code:: python
 
