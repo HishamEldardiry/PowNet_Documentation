@@ -32,13 +32,13 @@
 
 **5. Make changes in user input variables**
 
+*make changes in the main.py loaded [e.g., ``MODEL_NAME`` to define region of interest, ``T`` for Simulation Horizon,
+or ``use_gurobi`` to choose optimization solver] and then save changes*
+  
 .. code:: python
 
   >>> %load main.py
 
-  *make changes in the main.py loaded [e.g., ``MODEL_NAME`` to define region of interest, ``T`` for Simulation Horizon,
-or ``use_gurobi`` to choose optimization solver] and then save changes*
-  
   >>> %save main.py
 
 **6. Add the PYTHONPATH environment variable**
