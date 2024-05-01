@@ -50,10 +50,7 @@ PowNet Scripts
 --------------
 
 .. list-table:: PowNet Scripts 
-   :widths: 10 30 
-   :header-rows: 1
    :class: tight-table  
-
 +--------------------------+-------------------------------------------------------------+
 | Script                   | Description                                                 |
 +==========================+=============================================================+
@@ -93,12 +90,11 @@ PowNet Scripts
 | input.py                 | Read the user inputs that define the power system           |
 |                          | over one year including:                                    |
 |                          |                                                             |
-|                          |  1) demand_export.csv                                       |
+|                          | 1) demand_export.csv                                        |
 |                          |                                                             |
-|                          |  2) pownet_derate_factor.csv                                |
+|                          | 2) pownet_derate_factor.csv                                 |
 |                          |                                                             |
-|                          |  3) fuel_price.csv                                          |
-|                          |                                                             |
+|                          | 3) fuel_price.csv                                           |
 +--------------------------+-------------------------------------------------------------+
 | record.py                | Contains functions to record/write simulation               |
 |                          | variables/outputs including:                                |
