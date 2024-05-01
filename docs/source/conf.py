@@ -14,6 +14,8 @@ version = '2.0.0'
 # -- General configuration
 
 github_username = 'HishamEldardiry'
+github_repository = 'PowNet_Documentation'
+
 
 extensions = [
     'sphinx.ext.duration',
