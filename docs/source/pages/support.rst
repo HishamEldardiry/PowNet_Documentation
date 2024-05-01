@@ -4,7 +4,7 @@
 Frequently Asked Questions [FAQs]
 ----------------------------------
 
-**1. I am trying to install Gurobi on macbook using: ``pip install gurobipy`` but it doesn't work.**
+1. I am trying to install Gurobi on macbook using: ``pip install gurobipy`` but it doesn't work.
 
   Try the installation of gurobi through anaconda as follows:
   
