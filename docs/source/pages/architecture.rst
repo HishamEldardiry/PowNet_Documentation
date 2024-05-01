@@ -42,6 +42,7 @@ The user can make changes for the following options in ``main.py`` :
    Save_PLOT = True
 
 
+--------------
 PowNet Scripts
 --------------
 
@@ -81,8 +82,7 @@ PowNet Scripts
 |                          | adding unit commitment constraints [using equations   |
 |                          | from Kneuven et al (2019)]                            |
 +--------------------------+-------------------------------------------------------+
-| input.py                 |  Read the user inputs that define the power system    |
-|                          |  over one year including:                             |
+| input.py                 |  Read the user inputs that define the power system over one year including:    |
 |                          |                                                       |
 |                          |  1) demand_export.csv                                 |
 |                          |                                                       |
@@ -109,6 +109,7 @@ PowNet Scripts
 |                          | 2) Visulaizer                                         |
 +--------------------------+-------------------------------------------------------+
 
+------------------
 PowNet Input Files
 ------------------
 
@@ -159,46 +160,27 @@ PowNet Input Files
 | fuels.csv                   | Provides a list of color codes for different fuel types for plotting purposes.                                               |
 +-----------------------------+------------------------------------------------+
 
-**Examples of Input Files:**
 
-:mark:`“\ **model_library/laos”**`
-
-|image3|
-
-**:mark:`“database”`**
-
-|image4|
-
-|image5|
-
-|A table with numbers and letters Description automatically generated|
-
-|image6|
-
-:mark:`PowNet Output Files Directory [Guide]`
----------------------------------------------
+--------------------
+PowNet Output Files
+--------------------
 
 +---------------------------------------+------------------------------+
 | File                                  | Description                  |
 +=======================================+==============================+
-| YY                                    |                              |
-| YYMMDD_hhmm_laos_T_flow_variables.csv |                              |
+| YYYYMMDD_hhmm_laos_T_flow_variables.csv                                    | Flow of electricity in the transmission lines. Indexed with (source, sink, time)                             |
+|  |                              |
 +---------------------------------------+------------------------------+
-| YY                                    | hourly power values of       |
-| YYMMDD_hhmm_laos_T_node_variables.csv | different power plants based |
-|                                       | on nodes type (vartype)      |
+| YYYYMMDD_hhmm_laos_T_node_variables.csv                                    | hourly power values of       |
+|  | different power plants based |
+|                                       | on nodes type (vartype). Indexed with (node, time)      |
 +---------------------------------------+------------------------------+
-| YYYYMMDD\_                            |                              |
-| hhmm_laos_T_system_variables.csv      |                              |
+| YYYYMMDD_hhmm_laos_T_system_variables.csv                             | System level variables, i.e. spinning reserve. Indexed with (time).                              |
+|      |                              |
 +---------------------------------------+------------------------------+
-| YYYYMMDD_hhmm_laos_fuelmix.png        |                              |
+| YYYYMMDD_hhmm_laos_fuelmix.png        | Output figure showing the generation mix.                              |
 +---------------------------------------+------------------------------+
-| YYYYMMDD_hhmm_unit_plots/             |                              |
-| YYYYMMDD_hhmm \_laos_XXXXX.png        |                              |
+| YYYYMMDD_hhmm_unit_plots/YYYYMMDD_hhmm_laos_XXXXX.png             |                              |
+|                                       | Output figure showing the dispatch for each thermal unit and the unit’s on/off status.                              |
 +---------------------------------------+------------------------------+
 
-|image7|\ **Examples of output files:**
-
-|A screenshot of a table Description automatically
-generated|\ |image8|\ **
-**
