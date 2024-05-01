@@ -5,7 +5,7 @@ import re
 # -- Project information
 
 project = 'PowNet'
-copyright = '2024, `Critical Infrastructure Systems (CIS) Lab <https://galelli.cee.cornell.edu/>`_, Cornell University'
+copyright = '2024, Critical Infrastructure Systems (CIS) Lab, Cornell University'
 author = 'Critical Infrastructure Systems Lab (CIS), Cornell University'
 
 release = '2.0'
