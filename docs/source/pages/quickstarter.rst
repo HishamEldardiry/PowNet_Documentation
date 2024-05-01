@@ -4,19 +4,19 @@
 
 **1. Install Jupyter Notebook**
 
-.. code:: console
+.. code:: bash
 
   >>> pip install jupyterlab
 
 **2. Launch a Jupyter Notebook from the terminal**
 
-.. code:: console
+.. code:: bash
 
   >>> jupyter lab
 
 **3. Download PowNet from CSI Lab GitHub Repo**
 
-.. code:: console
+.. code:: bash
   
   >>> ! git clone https://github.com/Critical-Infrastructure-Systems-Lab/PowNet.git
 
