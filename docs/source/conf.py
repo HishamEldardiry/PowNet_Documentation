@@ -53,7 +53,7 @@ html_context = {
 "commit": False,
 }
 
-html_show_sphinx = False
+# -- html_show_sphinx = False
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
