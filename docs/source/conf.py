@@ -47,6 +47,12 @@ html_theme_options = {
     'release': '',
 }
 
+html_context = {
+"display_github": False, # Add 'Edit on Github' link instead of 'View page source'
+"last_updated": True,
+"commit": False,
+}
+
 html_show_sphinx = False
 
 # -- Options for EPUB output
