@@ -57,8 +57,7 @@ PowNet Scripts
 |                          |                                                       |
 |                          | 2) ``transmission_params.csv``                        |
 |                          |                                                       |
-|                          | 3) ``unit_param.csv`` (needed for derate factor       |
-|                          |      calculation)                                     |
+|                          | 3) ``unit_param.csv`` (needed for derate factor calculation)       |
 |                          |                                                       |
 |                          | 4) ``fuel_map.csv`` (needed for fuel price)           |
 +--------------------------+-------------------------------------------------------+
