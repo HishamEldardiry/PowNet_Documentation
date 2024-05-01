@@ -49,6 +49,11 @@ The user can make changes for the following options in ``main.py`` :
 PowNet Scripts
 --------------
 
+.. list-table:: 
+   :widths: 10 30 
+   :header-rows: 1
+   :class: tight-table  
+
 +--------------------------+-------------------------------------------------------------+
 | Script                   | Description                                                 |
 +==========================+=============================================================+
