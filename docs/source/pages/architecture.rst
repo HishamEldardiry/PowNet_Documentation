@@ -138,7 +138,7 @@ PowNet Input Files
 | unit_param.csv              | Techno-economic parameters of thermal generators              |
 |                             |                                                               |
 +-----------------------------+---------------------------------------------------------------+
-| fuel_map.csv                | This was used in the old version but no longer                |  
+| fuel_map.csv                | This file was used in the old version but no longer           |  
 |                             | needed unless the user wants                                  |
 |                             | to create ``fuel_price.csv`` with the                         |
 |                             | ``create_fuelprice`` function from ``input_processor.py``.    |
