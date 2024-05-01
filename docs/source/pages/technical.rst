@@ -12,6 +12,7 @@ Commitment (UC) Formulation using Mixed Integer Programming (MIP):
 
 
 ..
+
 ..
 
 
@@ -21,6 +22,7 @@ Commitment (UC) Formulation using Mixed Integer Programming (MIP):
 
 
 ..
+
 ..
 
 
