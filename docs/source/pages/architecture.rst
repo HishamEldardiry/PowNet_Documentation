@@ -49,8 +49,6 @@ The user can make changes for the following options in ``main.py`` :
 PowNet Scripts
 --------------
 
-.. list-table::test 
-   :class: tight-table  
 +--------------------------+-------------------------------------------------------------+
 | Script                   | Description                                                 |
 +==========================+=============================================================+
