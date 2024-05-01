@@ -12,6 +12,7 @@ release = '2.0'
 version = '2.0.0'
 
 # -- General configuration
+pip install sphinx-tabs
 
 extensions = [
     'sphinx.ext.duration',
