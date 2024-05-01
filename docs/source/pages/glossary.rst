@@ -3,11 +3,11 @@
 
 .. confval:: Generation Mix
 
-    Refers to the combination of the various fuels used to generate electricity in a given geographic region.
+    The combination of the various fuels used to generate electricity in a given geographic region.
 
 .. confval:: Grid Dispatch
 
-    Refers to the process by which transmission system operators decide which power plants and generation facilities to deploy to meet current electricity demand.
+    The process by which transmission system operators decide which power plants and generation facilities to deploy to meet current electricity demand.
 
 .. confval:: Unit Commitment
 
@@ -23,7 +23,7 @@
 
 .. confval:: Derating Factor
 
-    refers to a reduction factor applied to the nominal capacity or rating of a component, such as a generator, transformer, or transmission line, to account for operating conditions or  constraints that may limit its performance such as temperature, humidity, altitude, loading, and system configuration. These deviations can affect the performance and capability of power system components.
+    A reduction factor applied to the nominal capacity or rating of a component, such as a generator, transformer, or transmission line, to account for operating conditions or  constraints that may limit its performance such as temperature, humidity, altitude, loading, and system configuration. These deviations can affect the performance and capability of power system components.
 
 .. confval:: N-1 Criterion
 
@@ -31,4 +31,4 @@
 
 .. confval:: Spinning Reserve
 
-    Refers to the excess generating capacity that is immediately available and synchronized to the grid (but is not currently generating energy) to meet unexpected increases in electricity demand or compensate for sudden generator or transmission line outages.
+    The excess generating capacity that is immediately available and synchronized to the grid (but is not currently generating energy) to meet unexpected increases in electricity demand or compensate for sudden generator or transmission line outages.
