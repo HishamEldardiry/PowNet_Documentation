@@ -32,12 +32,12 @@
 
 **5. Make changes in user input variables**
 
-*[e.g., Model Name or Region of Interest, Simulation Horizon,
-Optimization Algorithm]*
-
 .. code:: python
 
   >>> %load main.py
+
+  *make changes in the main.py loaded [e.g., ``MODEL_NAME`` to define region of interest, ``T`` for Simulation Horizon,
+or ``use_gurobi`` to choose optimization solver] and then save changes*
   
   >>> %save main.py
 
