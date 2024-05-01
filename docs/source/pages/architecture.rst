@@ -46,6 +46,67 @@ The user can make changes for the following options in ``main.py`` :
    Save_PLOT = True
 
 
+PowNet Scripts Directory [Guide]
+--------------------------------
+
++--------------+-------------------------------------------------------+
+| Script       | Description                                           |
++==============+=======================================================+
+| input_       | Prepare the power system paramaters (saved under      |
+| processor.py | “model_library” folder) for the region of interest.   |
+|              |                                                       |
+|              | It uses the following files to calculate parameters:  |
+|              |                                                       |
+|              | 1) “transmission.csv”                                 |
+|              |                                                       |
+|              | 2) “transmission_params.csv”                          |
+|              |                                                       |
+|              | 3) “unit_param.csv” (needed for derate factor         |
+|              | calculation)                                          |
+|              |                                                       |
+|              | 4) “fuel_map.csv” (needed for fuel price)             |
++--------------+-------------------------------------------------------+
+| f            | Define the path of different folders (e.g., pownet    |
+| older_sys.py | directory, inputs, outputs)                           |
++--------------+-------------------------------------------------------+
+| config.py    | Read the configurations for PowNet and Gurobi from    |
+|              | “user_config.init”                                    |
++--------------+-------------------------------------------------------+
+| functions.py | Contains functions to process user inputs including:  |
+|              |                                                       |
+|              | 1) get_dates()                                        |
+|              |                                                       |
+|              | 2) get_fuel_prices()                                  |
+|              |                                                       |
+|              | 3) create_init_condition()                            |
+|              |                                                       |
+|              | 4) get_linecap()                                      |
++--------------+-------------------------------------------------------+
+| builder.py   | Contains “ModelBuilder” class to build the model by   |
+|              | adding unit commitment constraints [using equations   |
+|              | from Kneuven et al (2019)]                            |
++--------------+-------------------------------------------------------+
+| input.py     |                                                       |
++--------------+-------------------------------------------------------+
+| record.py    | Contains functions to record/write simulation         |
+|              | variables/outputs including:                          |
+|              |                                                       |
+|              | 1) write_df()                                         |
+|              |                                                       |
+|              | 2) SystemRecord.to_csv() [called by “simulation.py”]  |
++--------------+-------------------------------------------------------+
+| s            | Contains functions to run simulation including        |
+| imulation.py | “Simulator.run”                                       |
++--------------+-------------------------------------------------------+
+| output.py    | Contains functions to postprocess outputs and produce |
+|              | plots including the following classes:                |
+|              |                                                       |
+|              | 1) OutputProcessor                                    |
+|              |                                                       |
+|              | 2) Visulaizer                                         |
++--------------+-------------------------------------------------------+
+
+
 --------------
 PowNet Scripts
 --------------
