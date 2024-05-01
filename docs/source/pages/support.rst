@@ -8,7 +8,7 @@ Frequently Asked Questions [FAQs]
 
    This FAQ page is regularly updated with troubleshooting tips for questions and issues encountered by PowNet users.
 
-**1. I am trying to install Gurobi on macbook using: ``pip install gurobipy`` but it doesn't work.**
+**1. I am trying to install Gurobi on macbook using** ``pip install gurobipy`` **but it doesn't work.**
 
   *Try the installation of gurobi through anaconda as follows:*
   
