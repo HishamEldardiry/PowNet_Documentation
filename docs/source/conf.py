@@ -48,8 +48,8 @@ html_theme_options = {
 }
 
 html_context = {
-"display_github": False, # Add 'Edit on Github' link instead of 'View page source'
-"last_updated": True,
+"display_github": True, # Add 'Edit on Github' link instead of 'View page source'
+"last_updated": False,
 "commit": False,
 }
 
