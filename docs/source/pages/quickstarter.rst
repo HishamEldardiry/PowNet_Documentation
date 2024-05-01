@@ -2,69 +2,37 @@
 **4. Quickstarter Notebook**
 ============================
 
-**# Install Jupyter Notebook**
+**1. Install Jupyter Notebook**
+.. code:: console
+  >>> pip install jupyterlab
 
->>> pip install jupyterlab
+**2. Launch a Jupyter Notebook from the terminal**
+.. code:: console
+  >>> jupyter lab
 
-**# Launch a Jupyter Notebook from the terminal**
+**3. Download PowNet from CSI Lab GitHub Repo**
+.. code:: console
+  >>> ! git clone https://github.com/Critical-Infrastructure-Systems-Lab/PowNet.git
 
->>> jupyter lab
+**4. Change directory to PowNet folder**
+.. code:: python
+  >>> import os
+  >>> os.chdir('PowNet/')
+  >>> os.getcwd()
 
-**# Download PowNet from CSI Lab GitHub Repo**
+**5. Make changes in user input variables**
 
->>> ! git clone
-https://github.com/Critical-Infrastructure-Systems-Lab/PowNet.git
+*[e.g., Model Name or Region of Interest, Simulation Horizon,
+Optimization Algorithm]*
+.. code:: python
+  >>> %load main.py
+  >>> %save main.py
 
-**# Change directory to PowNet folder**
+**6. Add the PYTHONPATH environment variable**
+.. code:: python
+  >>> import sys
+  >>> sys.path.append('/Path/to/PowNet Directory/src/ ')
 
->>> import os
-
->>> os.chdir('PowNet/')
-
->>> os.getcwd()
-
-**# Make changes in user input variables**
-
-**[e.g., Model Name or Region of Interest, Simulation Horizon,
-Optimization Algorithm]**
-
->>> %load main.py
-
-*Edit the highlighted lines:*
-
-*# ------- User defined inputs*
-
-*:mark:`MODEL_NAME = 'laos_2016’`*
-
-*# The default simulation horizon T is 24 hours*
-
-*:mark:`T = 24`*
-
-*# One year has 8760 hours. If T = 24, then we have 365 steps.*
-
-*# STEPS = math.floor(8760/T)*
-
-*:mark:`STEPS = 5`*
-
-*# Decide whether to save results*
-
-*:mark:`SAVE_RESULT = False`*
-
-*:mark:`SAVE_PLOT = False`*
-
-*#############################*
-
->>> %save main.py
-
-**# Add the PYTHONPATH environment variable**
-
->>> import sys
-
-sys.path.append('/Path/to/PowNet/src/ ')
-
-**# Run PowNet Simulation**
-
->>> %run main.py
-
-**
-**
+**7. Run PowNet Simulation**
+.. code:: python
+  >>> %run main.py
