@@ -53,17 +53,17 @@ The user can make changes for the following options in ``main.py`` :
 
 .. confval:: Save_RESULT
 
-    Choosing to save results in ``outputs`` folder.
+    Choose to save results in ``outputs`` folder.
 
     :type: boolean
     :default: ``TRUE``
 
 .. confval:: Save_PLOT
 
-    Choosing to save figures in ``outputs`` folder.
+    Choose to save figures in ``outputs`` folder.
 
     :type: boolean
-    :default: ``TRUE`
+    :default: ``TRUE``
 
 --------------
 PowNet Scripts
