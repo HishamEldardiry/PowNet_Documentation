@@ -115,13 +115,6 @@ PowNet Input Files
 +-----------------------------+------------------------------------------------+
 | File                        | Description                                    |
 +=============================+================================================+
-| fuels.csv                   |                                                |
-+-----------------------------+------------------------------------------------+
-| transmission_params.csv     | Techno-economic assumptions of the transmission|
-|                             | lines (the user does not need to modify this   | 
-|                             | file unless they want to customize transmission|   
-|                             | line parameters)                               |
-+-----------------------------+------------------------------------------------+
 | transmission.csv            | Techno-economic parameters of the transmission | 	       
 |                             | system. The user will need to specify columns  | 
 |                             | without the “pownet” prefix. Once a user has   | 
@@ -130,30 +123,40 @@ PowNet Input Files
 |                             | from input_processor.py to generate columns    | 
 |                             | with the “pownet” prefix.                      |
 +-----------------------------+------------------------------------------------+
-| unit_param.csv              |                                                |
+| unit_param.csv              | Techno-economic parameters of thermal generators                                                |
 +-----------------------------+------------------------------------------------+
-| fuel_map.csv                |                                                |
+| fuel_map.csv                | This was used in the old version but no longer needed unless the user wants 
+|                             | to create ``fuel_price.csv`` with the ``create_fuelprice`` function from ``input_processor.py``.                                               |
 +-----------------------------+------------------------------------------------+
-| fuel_price.csv              |                                                |
+| fuel_price.csv              | Timeseries of fuel cost by generator. This file can be generated with the ``create_fuelprice`` 
+|                             | function from ``input_processor.py``.                                                 |
 +-----------------------------+------------------------------------------------+
-| demand_export.csv           |                                                |
+| demand_export.csv           | Timeseries of electricity demand at each node.                                                |
 +-----------------------------+------------------------------------------------+
-| derate_factor.csv           |                                                |
+| hydro.csv                   | Timeseries of hydropower availability by node.                                                |
 +-----------------------------+------------------------------------------------+
-| hydro.csv                   |                                                |
+| solar.csv                   | Timeseries of solar availability by node.                                                |
 +-----------------------------+------------------------------------------------+
-| import.csv                  |                                                |
+| wind.csv                   | Timeseries of wind availability by node.                                                |
 +-----------------------------+------------------------------------------------+
-| pownet_cycle_map.json       |                                                |
-|                             |                                                |
+| import.csv                  | Timeseries of import availability by node.                                                |
 +-----------------------------+------------------------------------------------+
-| pownet_derate_factor.csv    |                                                |
-|                             |                                                |
+| pownet_cycle_map.json       | Created with ``create_cycle_map`` function from ``input_processor.py``                                               |
 +-----------------------------+------------------------------------------------+
-| pownet_derated_capacity.csv |                                                |
-|                             |                                                |
+| pownet_derate_factor.csv    | Timeseries of the derating factor for each thermal generator. If there is no derating, 
+|                             | then the user can use the ``create_derate_factors`` from ``input_processor.py`` to create the file.                                               |
++-----------------------------+------------------------------------------------+
+| pownet_derated_capacity.csv | Timeseries of maximum capacity of thermal generators. This file is created with the 
+|                             | ``create_derated_max_capacities`` from ``input_processor.py``.                                               |
 +-----------------------------+------------------------------------------------+
 | renewable.csv               | Postprocessing of VICRes output                |
++-----------------------------+------------------------------------------------+
+| transmission_params.csv     | Techno-economic assumptions of the transmission|
+|                             | lines (the user does not need to modify this   | 
+|                             | file unless they want to customize transmission|   
+|                             | line parameters)                               |
++-----------------------------+------------------------------------------------+
+| fuels.csv                   | Provides a list of color codes for different fuel types for plotting purposes.                                               |
 +-----------------------------+------------------------------------------------+
 
 **Examples of Input Files:**
