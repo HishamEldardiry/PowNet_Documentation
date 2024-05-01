@@ -6,14 +6,6 @@
 PowNet Folder Structure
 -----------------------
 
-.. confval:: collapse_navigation
-
-    With this enabled, navigation entries are not expandable -- the ``[+]``
-    icons next to each entry are removed.
-
-    :type: boolean
-    :default: ``True``
-
 The folder/files structure of PowNet is summarized as follows:
 
 .. figure:: PowNet_Folder_Structure.png
@@ -25,7 +17,7 @@ The user can make changes for the following options in ``main.py`` :
 
 .. confval:: MODEL_NAME
 
-    define region of interest and year of simulation.
+    Define region of interest and year of simulation.
 
     :type: string
     :default: ``cambodia_2016``
@@ -34,29 +26,44 @@ The user can make changes for the following options in ``main.py`` :
 
     MODEL_NAME='cambodia_2016'
 
-2) Choosing optimization solver:
+.. confval:: use_gurobi
+
+    Choose optimization solver: ``False``: use HiGHS solver and ``True``: use Gurobi solver.
+
+    :type: boolean
+    :default: ``False``
 
 .. code:: python
 
    use_gurobi=False
 
-``True`` and ``False`` mean to use Gurobi and HiGHS solvers, respectively.
+.. confval:: T
 
-3) Choosing the simulation horizon or number of steps (number of days to run simulations):
+    Define the simulation horizon.
 
-.. code:: python
+    :type: integer
+    :default: ``24``
 
-   T=24
+.. confval:: STEPS
 
-   STEPS=5
+    Define the number of steps (number of days to run simulations).
 
-4) Choosing to save results and plots in ``outputs`` folder:
+    :type: integer
+    :default: ``5``
 
-.. code:: python
+.. confval:: Save_RESULT
 
-   Save_RESULT = True
+    Choosing to save results in ``outputs`` folder.
 
-   Save_PLOT = True
+    :type: boolean
+    :default: ``TRUE``
+
+.. confval:: Save_PLOT
+
+    Choosing to save figures in ``outputs`` folder.
+
+    :type: boolean
+    :default: ``TRUE`
 
 --------------
 PowNet Scripts
