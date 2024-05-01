@@ -17,13 +17,13 @@ The user can make changes for the following options in ``main.py`` :
 
     MODEL_NAME='cambodia_2016'
 
-2) Choosing optimization algorithm:
+2) Choosing optimization solver:
 
 .. code:: python
 
    use_gurobi=False
 
-``False`` means to use HiGHS solver optimization and ``True`` means to use ``Gurobi`` solver.
+``True`` and ``False`` mean to use Gurobi and HiGHS solvers, respectively.
 
 3) Choosing the simulation horizon or number of steps (number of days to run simulations):
 
