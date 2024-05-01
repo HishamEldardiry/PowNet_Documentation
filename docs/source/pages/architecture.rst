@@ -158,7 +158,7 @@ PowNet Input Files
 | solar.csv                   | Timeseries of solar availability by node.                     |
 |                             |                                                               |
 +-----------------------------+---------------------------------------------------------------+
-| wind.csv                   | Timeseries of wind availability by node.                       |
+| wind.csv                    | Timeseries of wind availability by node.                      |
 |                             |                                                               |
 +-----------------------------+---------------------------------------------------------------+
 | import.csv                  | Timeseries of import availability by node.                    |
