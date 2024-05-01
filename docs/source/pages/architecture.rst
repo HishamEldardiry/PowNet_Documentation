@@ -23,15 +23,13 @@ The user can make changes for the following options in ``main.py`` :
 
    use_gurobi=False
 
-*``False`` means to use HiGHS solver optimization and ``True`` means to use ``Gurobi`` solver.*
+``False`` means to use HiGHS solver optimization and ``True`` means to use ``Gurobi`` solver.
 
 3) Choosing the simulation horizon or number of steps (number of days to run simulations):
 
 .. code:: python
 
    T=24
-
-.. code:: python
 
    STEPS=5
 
@@ -60,7 +58,7 @@ PowNet Scripts
 |                          | 2) ``transmission_params.csv``                        |
 |                          |                                                       |
 |                          | 3) ``unit_param.csv`` (needed for derate factor       |
-|                          | calculation)                                          |
+|                          |      calculation)                                     |
 |                          |                                                       |
 |                          | 4) ``fuel_map.csv`` (needed for fuel price)           |
 +--------------------------+-------------------------------------------------------+
@@ -112,44 +110,52 @@ PowNet Scripts
 |                          | 2) Visulaizer                                         |
 +--------------------------+-------------------------------------------------------+
 
-:mark:`PowNet Input Files Directory [Guide]`
----------------------------------------------
+PowNet Input Files
+------------------
 
-+---------------------+------------------------------------------------+
-| File                | Description                                    |
-+=====================+================================================+
-| fuels.csv           |                                                |
-+---------------------+------------------------------------------------+
-| tran                |                                                |
-| smission_params.csv |                                                |
-+---------------------+------------------------------------------------+
-| transmission.csv    |                                                |
-+---------------------+------------------------------------------------+
-| unit_param.csv      |                                                |
-+---------------------+------------------------------------------------+
-| fuel_map.csv        |                                                |
-+---------------------+------------------------------------------------+
-| fuel_price.csv      |                                                |
-+---------------------+------------------------------------------------+
-| demand_export.csv   |                                                |
-+---------------------+------------------------------------------------+
-| derate_factor.csv   |                                                |
-+---------------------+------------------------------------------------+
-| hydro.csv           |                                                |
-+---------------------+------------------------------------------------+
-| import.csv          |                                                |
-+---------------------+------------------------------------------------+
-| po                  |                                                |
-| wnet_cycle_map.json |                                                |
-+---------------------+------------------------------------------------+
-| powne               |                                                |
-| t_derate_factor.csv |                                                |
-+---------------------+------------------------------------------------+
-| pownet_d            |                                                |
-| erated_capacity.csv |                                                |
-+---------------------+------------------------------------------------+
-| renewable.csv       | Postprocessing of VICRes output                |
-+---------------------+------------------------------------------------+
++-----------------------------+------------------------------------------------+
+| File                        | Description                                    |
++=============================+================================================+
+| fuels.csv                   |                                                |
++-----------------------------+------------------------------------------------+
+| transmission_params.csv     | Techno-economic assumptions of the transmission|
+|                             | lines (the user does not need to modify this   | 
+|                             | file unless they want to customize transmission|   
+|                             | line parameters)                               |
++-----------------------------+------------------------------------------------+
+| transmission.csv            | Techno-economic parameters of the transmission | 	       
+|                             | system. The user will need to specify columns  | 
+|                             | without the “pownet” prefix. Once a user has   | 
+|                             | specified the necessary columns, they need to  |
+|                             | run the transform_transmission_inputs function | 
+|                             | from input_processor.py to generate columns    | 
+|                             | with the “pownet” prefix.                      |
++-----------------------------+------------------------------------------------+
+| unit_param.csv              |                                                |
++-----------------------------+------------------------------------------------+
+| fuel_map.csv                |                                                |
++-----------------------------+------------------------------------------------+
+| fuel_price.csv              |                                                |
++-----------------------------+------------------------------------------------+
+| demand_export.csv           |                                                |
++-----------------------------+------------------------------------------------+
+| derate_factor.csv           |                                                |
++-----------------------------+------------------------------------------------+
+| hydro.csv                   |                                                |
++-----------------------------+------------------------------------------------+
+| import.csv                  |                                                |
++-----------------------------+------------------------------------------------+
+| pownet_cycle_map.json       |                                                |
+|                             |                                                |
++-----------------------------+------------------------------------------------+
+| pownet_derate_factor.csv    |                                                |
+|                             |                                                |
++-----------------------------+------------------------------------------------+
+| pownet_derated_capacity.csv |                                                |
+|                             |                                                |
++-----------------------------+------------------------------------------------+
+| renewable.csv               | Postprocessing of VICRes output                |
++-----------------------------+------------------------------------------------+
 
 **Examples of Input Files:**
 
