@@ -23,25 +23,19 @@ The user can make changes for the following options in ``main.py`` :
 
    use_gurobi=False
 
-*“False”: Use HiGHS* 
+*``False`` means to use HiGHS solver optimization and ``True`` means to use ``Gurobi`` solver.*
 
-*“True”: Use Gurobi*
-
-3) Choosing the simulation horizon or number of steps (number of days):
+3) Choosing the simulation horizon or number of steps (number of days to run simulations):
 
 .. code:: python
 
    T=24
 
-*Choose the simulation horizon and calculate the number of steps per year=8760/T*
-
 .. code:: python
 
    STEPS=5
 
-*Choose the number of STEPS as the number of days to run simulations*
-
-4) Choosing to save results and plots or not:
+4) Choosing to save results and plots in ``outputs`` folder:
 
 .. code:: python
 
@@ -49,70 +43,74 @@ The user can make changes for the following options in ``main.py`` :
 
    Save_PLOT = True
 
-*“True”: Saving results in “outputs” folder
-
-*“False”: Not saving results in “outputs” folder
-
 
 PowNet Scripts
 --------------
 
-+--------------+-------------------------------------------------------+
-| Script       | Description                                           |
-+==============+=======================================================+
-| input_       | Prepare the power system paramaters (saved under      |
-| processor.py | “model_library” folder) for the region of interest.   |
-|              |                                                       |
-|              | It uses the following files to calculate parameters:  |
-|              |                                                       |
-|              | 1) ``transmission.csv``                               |
-|              |                                                       |
-|              | 2) ``transmission_params.csv``                        |
-|              |                                                       |
-|              | 3) ``unit_param.csv`` (needed for derate factor       |
-|              | calculation)                                          |
-|              |                                                       |
-|              | 4) ``fuel_map.csv`` (needed for fuel price)           |
-+--------------+-------------------------------------------------------+
-| f            | Define the path of different folders (e.g., pownet    |
-| older_sys.py | directory, inputs, outputs)                           |
-+--------------+-------------------------------------------------------+
-| config.py    | Read the configurations for PowNet and Gurobi from    |
-|              | “user_config.init”                                    |
-+--------------+-------------------------------------------------------+
-| functions.py | Contains functions to process user inputs including:  |
-|              |                                                       |
-|              | 1) get_dates()                                        |
-|              |                                                       |
-|              | 2) get_fuel_prices()                                  |
-|              |                                                       |
-|              | 3) create_init_condition()                            |
-|              |                                                       |
-|              | 4) get_linecap()                                      |
-+--------------+-------------------------------------------------------+
-| builder.py   | Contains “ModelBuilder” class to build the model by   |
-|              | adding unit commitment constraints [using equations   |
-|              | from Kneuven et al (2019)]                            |
-+--------------+-------------------------------------------------------+
-| input.py     |                                                       |
-+--------------+-------------------------------------------------------+
-| record.py    | Contains functions to record/write simulation         |
-|              | variables/outputs including:                          |
-|              |                                                       |
-|              | 1) write_df()                                         |
-|              |                                                       |
-|              | 2) SystemRecord.to_csv() [called by “simulation.py”]  |
-+--------------+-------------------------------------------------------+
-| s            | Contains functions to run simulation including        |
-| imulation.py | “Simulator.run”                                       |
-+--------------+-------------------------------------------------------+
-| output.py    | Contains functions to postprocess outputs and produce |
-|              | plots including the following classes:                |
-|              |                                                       |
-|              | 1) OutputProcessor                                    |
-|              |                                                       |
-|              | 2) Visulaizer                                         |
-+--------------+-------------------------------------------------------+
++--------------------------+-------------------------------------------------------+
+| Script                   | Description                                           |
++==========================+=======================================================+
+| input_processor.py       | Prepare the power system paramaters (saved under      |
+|                          | “model_library” folder) for the region of interest.   |
+|                          |                                                       |
+|                          | It uses the following files to calculate parameters:  |
+|                          |                                                       |
+|                          | 1) ``transmission.csv``                               |
+|                          |                                                       |
+|                          | 2) ``transmission_params.csv``                        |
+|                          |                                                       |
+|                          | 3) ``unit_param.csv`` (needed for derate factor       |
+|                          | calculation)                                          |
+|                          |                                                       |
+|                          | 4) ``fuel_map.csv`` (needed for fuel price)           |
++--------------------------+-------------------------------------------------------+
+| folder_sys.py            | Define the path of different folders (e.g., pownet    |
+|                          | directory, inputs, outputs)                           |
++--------------------------+-------------------------------------------------------+
+| config.py                | Read the configurations for PowNet and Gurobi from    |
+|                          | “user_config.init”                                    |
++--------------------------+-------------------------------------------------------+
+| functions.py             | Contains functions to process user inputs including:  |
+|                          |                                                       |
+|                          | 1) get_dates()                                        |
+|                          |                                                       |
+|                          | 2) get_fuel_prices()                                  |
+|                          |                                                       |
+|                          | 3) create_init_condition()                            |
+|                          |                                                       |
+|                          | 4) get_linecap()                                      |
++--------------------------+-------------------------------------------------------+
+| builder.py               | Contains “ModelBuilder” class to build the model by   |
+|                          | adding unit commitment constraints [using equations   |
+|                          | from Kneuven et al (2019)]                            |
++--------------------------+-------------------------------------------------------+
+| input.py                 |  Read the user inputs that define the power system    |
+|                          |  over one year including:                             |
+|                          |                                                       |
+|                          |  1) demand_export.csv                                 |
+|                          |                                                       |
+|                          |  2) pownet_derate_factor.csv                          |
+|                          |                                                       |
+|                          |  3) fuel_price.csv                                    |
+|                          |                                                       |
++--------------------------+-------------------------------------------------------+
+| record.py                | Contains functions to record/write simulation         |
+|                          | variables/outputs including:                          |
+|                          |                                                       |
+|                          | 1) write_df()                                         |
+|                          |                                                       |
+|                          | 2) SystemRecord.to_csv() [called by “simulation.py”]  |
++--------------------------+-------------------------------------------------------+
+| simulation.py            | Contains functions to run simulation including        |
+|                          | “Simulator.run”                                       |
++--------------------------+-------------------------------------------------------+
+| output.py                | Contains functions to postprocess outputs and produce |
+|                          | plots including the following classes:                |
+|                          |                                                       |
+|                          | 1) OutputProcessor                                    |
+|                          |                                                       |
+|                          | 2) Visulaizer                                         |
++--------------------------+-------------------------------------------------------+
 
 :mark:`PowNet Input Files Directory [Guide]`
 ---------------------------------------------
