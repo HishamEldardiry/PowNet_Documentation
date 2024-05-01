@@ -11,9 +11,11 @@ Commitment (UC) Formulation using Mixed Integer Programming (MIP):
    Software, 8(1).
 
 
+
 -  Knueven, B., Ostrowski, J., & Watson, J. P. (2020). `On mixed-integer
    programming formulations for the unit commitment problem <https://pubsonline.informs.org/doi/10.1287/ijoc.2019.0944>`_. INFORMS
    Journal on Computing, 32(4), 857-876.
+
 
 
 -  Hörsch, J., Ronellenfitsch, H., Witthaut, D., & Brown, T. (2018).
