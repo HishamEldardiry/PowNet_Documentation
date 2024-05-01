@@ -31,13 +31,15 @@
   >>> os.getcwd()
 
 **5. Make changes in user input variables**
-
-*Make changes in the main.py loaded [e.g., ```MODEL_NAME``` to define region of interest, ```T``` for Simulation Horizon,
-or ``use_gurobi`` to choose optimization solver] and then save changes.*
   
 .. code:: python
 
   >>> %load main.py
+
+*Make changes in the main.py loaded [e.g., `MODEL_NAME` to define region of interest, `T` for Simulation Horizon,
+or `use_gurobi` to choose optimization solver] and then save changes.*
+
+.. code:: python
 
   >>> %save main.py
 
