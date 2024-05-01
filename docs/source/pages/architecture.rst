@@ -2,7 +2,7 @@
 **3. Software Architecture**
 ============================
 
-*The folder/files structure of PowNet is summarized as follows:*
+The folder/files structure of PowNet is summarized as follows:
 
 .. figure:: PowNet_Folder_Structure.png
    :align: center
@@ -11,7 +11,7 @@
 
 The user can make changes for the following options in ``main.py`` :
 
-1) Choosing model region of interest (ROI):
+1) Choosing region of interest and year of simulation:
 
 .. code:: python
 
@@ -21,53 +21,41 @@ The user can make changes for the following options in ``main.py`` :
 
 .. code:: python
 
-   use_gurobi='True'
+   use_gurobi=False
 
-“True”: Use Gurobi
+*“False”: Use HiGHS* 
 
-“False”: Use HiGHS
+*“True”: Use Gurobi*
 
 3) Choosing the simulation horizon or number of steps (number of days):
 
 .. code:: python
 
-   T=
+   T=24
 
-Choose the simulation horizon and calculate the number of steps per year=8760/T
-
-.. code:: python
-
-   STEPS=
-
-Choose the number of STEPS as the number of days to run simulations
-
-From “main.py”:
+*Choose the simulation horizon and calculate the number of steps per year=8760/T*
 
 .. code:: python
 
-   record= simulator.run(steps=STEPS)
+   STEPS=5
 
-From “simulation.py”:
-
-.. code:: python
-
-   steps_to_run = min(steps, 365 \* 24 //self.T)
+*Choose the number of STEPS as the number of days to run simulations*
 
 4) Choosing to save results and plots or not:
 
 .. code:: python
 
-   Save_RESULT = 'True'
+   Save_RESULT = True
 
-   Save_PLOT = 'True'
+   Save_PLOT = True
 
-“True”: Saving results in “outputs” folder
+*“True”: Saving results in “outputs” folder
 
-“False”: Not saving results in “outputs” folder
+*“False”: Not saving results in “outputs” folder
 
 
-PowNet Scripts Directory [Guide]
---------------------------------
+PowNet Scripts
+--------------
 
 +--------------+-------------------------------------------------------+
 | Script       | Description                                           |
@@ -77,14 +65,14 @@ PowNet Scripts Directory [Guide]
 |              |                                                       |
 |              | It uses the following files to calculate parameters:  |
 |              |                                                       |
-|              | 1) “transmission.csv”                                 |
+|              | 1) ``transmission.csv``                               |
 |              |                                                       |
-|              | 2) “transmission_params.csv”                          |
+|              | 2) ``transmission_params.csv``                        |
 |              |                                                       |
-|              | 3) “unit_param.csv” (needed for derate factor         |
+|              | 3) ``unit_param.csv`` (needed for derate factor       |
 |              | calculation)                                          |
 |              |                                                       |
-|              | 4) “fuel_map.csv” (needed for fuel price)             |
+|              | 4) ``fuel_map.csv`` (needed for fuel price)           |
 +--------------+-------------------------------------------------------+
 | f            | Define the path of different folders (e.g., pownet    |
 | older_sys.py | directory, inputs, outputs)                           |
