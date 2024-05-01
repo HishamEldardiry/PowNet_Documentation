@@ -7,6 +7,7 @@ Frequently Asked Questions [FAQs]
 **1. I am trying to install Gurobi on macbook using: ``pip install gurobipy`` but it doesn't work.**
 
 .. code:: shell
+  
   *Try the installation of gurobi through anaconda as follows:*
 
   >>> conda config --add channels https://conda.anaconda.org/gurobi
