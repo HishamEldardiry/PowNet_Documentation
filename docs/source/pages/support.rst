@@ -8,7 +8,7 @@ Frequently Asked Questions [FAQs]
 
 .. code:: shell
   
-  *Try the installation of gurobi through anaconda as follows:*
+  Try the installation of gurobi through anaconda as follows:
 
   >>> conda config --add channels https://conda.anaconda.org/gurobi
 
