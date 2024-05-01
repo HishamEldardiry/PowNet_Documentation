@@ -5,6 +5,7 @@
 Please refer to the following papers for more details on the Unit
 Commitment (UC) Formulation using Mixed Integer Programming (MIP):
 
+
 .. class:: bullet-list
 -  Chowdhury, A. F. M., Kern, J., Dang, T. D., & Galelli, S. (2020).
    `PowNet: A Network-Constrained Unit Commitment/Economic Dispatch Model
