@@ -47,6 +47,8 @@ html_theme_options = {
     'release': '',
 }
 
+html_show_sphinx = False
+
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
 
