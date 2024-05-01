@@ -2,6 +2,10 @@
 **3. Software Architecture**
 ============================
 
+-----------------------
+PowNet Folder Structure
+-----------------------
+
 The folder/files structure of PowNet is summarized as follows:
 
 .. figure:: PowNet_Folder_Structure.png
