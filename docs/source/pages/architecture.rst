@@ -56,13 +56,13 @@ PowNet Scripts
 |                          | “model_library” folder) for the region of interest.         |
 |                          | It uses the following files to calculate parameters:        |
 |                          |                                                             |
-|                          | 1) ``transmission.csv``                                     |
+|                          | 1) transmission.csv                                         |
 |                          |                                                             |
-|                          | 2) ``transmission_params.csv``                              |
+|                          | 2) transmission_params.csv                                  |
 |                          |                                                             |
-|                          | 3) ``unit_param.csv`` (needed for derate factor calculation)|
+|                          | 3) unit_param.csv (needed for derate factor calculation)    |
 |                          |                                                             |
-|                          | 4) ``fuel_map.csv`` (needed for fuel price)                 |
+|                          | 4) fuel_map.csv (needed for fuel price)  \                  |
 +--------------------------+-------------------------------------------------------------+
 | folder_sys.py            | Define the path of different folders (e.g., pownet          |
 |                          | directory, inputs, outputs)                                 |
