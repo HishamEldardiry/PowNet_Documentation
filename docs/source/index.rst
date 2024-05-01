@@ -1,7 +1,7 @@
 Welcome to PowNet's documentation!
 ===================================
 
-**Pownet** is a PowNet is a least-cost optimization model for simulating the Unit Commitment and Economic Dispatch (UC/ED) of large-scale (regional to country) power systems.
+**Pownet** is a least-cost optimization model for simulating the Unit Commitment and Economic Dispatch (UC/ED) of large-scale (regional to country) power systems.
 
 
 Content
