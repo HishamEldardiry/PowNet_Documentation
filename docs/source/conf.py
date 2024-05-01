@@ -22,6 +22,7 @@ extensions = [
     'sphinx.ext.mathjax',
     'sphinx.ext.viewcode',
     'sphinx_rtd_theme',
+    'sphinx_toolbox.confval',
 ]
 
 intersphinx_mapping = {
