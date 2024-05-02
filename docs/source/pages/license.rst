@@ -3,7 +3,11 @@
 
 **PowNet is released under the MIT license.**
 
-**MIT License**
+|GitHub license|
+
+.. |GitHub license| image:: https://img.shields.io/github/license/Naereen/StrapDown.js.svg
+   :target: https://pownet.readthedocs.io/en/latest/pages/license.html
+
 
 Copyright (c) 2024 Phumthep Bunnak
 
